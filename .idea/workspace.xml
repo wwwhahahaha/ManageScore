@@ -6,9 +6,7 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="fdfbe2a2-3515-4b20-bf3f-e6817fb42121" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="fdfbe2a2-3515-4b20-bf3f-e6817fb42121" name="Default" comment="" />
     <ignored path="$PROJECT_DIR$/target/" />
     <ignored path="$PROJECT_DIR$/ManScoreClient/target/" />
     <ignored path="$PROJECT_DIR$/ManageScoreWeb/target/" />
@@ -38,43 +36,6 @@
         <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
         <item name="stp@202.196.37.91" type="feb32156:DbDataSourceImpl" />
       </path>
-      <path>
-        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="stp@202.196.37.91" type="feb32156:DbDataSourceImpl" />
-        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
-      </path>
-      <path>
-        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="stp@202.196.37.91" type="feb32156:DbDataSourceImpl" />
-        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
-        <item name="stp: schema" type="c314c289:MysqlImplModel$Schema" />
-      </path>
-      <path>
-        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="stp@202.196.37.91" type="feb32156:DbDataSourceImpl" />
-        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
-        <item name="stp: schema" type="c314c289:MysqlImplModel$Schema" />
-        <item name="statistics: table" type="98d5ac3d:MysqlImplModel$Table" />
-      </path>
-      <path>
-        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="stp@202.196.37.91" type="feb32156:DbDataSourceImpl" />
-        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
-        <item name="stp: schema" type="c314c289:MysqlImplModel$Schema" />
-        <item name="typein: table" type="98d5ac3d:MysqlImplModel$Table" />
-      </path>
-      <path>
-        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="stp@202.196.37.91" type="feb32156:DbDataSourceImpl" />
-        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
-        <item name="stp: schema" type="c314c289:MysqlImplModel$Schema" />
-        <item name="userback: table" type="98d5ac3d:MysqlImplModel$Table" />
-      </path>
-      <path>
-        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="stp@202.196.37.91" type="feb32156:DbDataSourceImpl" />
-        <item name="collations" type="d4e8921:DatabaseStructure$FamilyGroup" />
-      </path>
     </expand>
     <select />
   </component>
@@ -83,8 +44,8 @@
       <file leaf-file-name="GenericDao.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/ManageScoreBase/src/main/java/nb/stp/mansco/base/dao/GenericDao.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="173">
-              <caret line="24" column="22" lean-forward="true" selection-start-line="24" selection-start-column="22" selection-end-line="24" selection-end-column="22" />
+            <state relative-caret-position="361">
+              <caret line="24" column="22" selection-start-line="24" selection-start-column="22" selection-end-line="24" selection-end-column="22" />
             </state>
           </provider>
         </entry>
@@ -92,7 +53,7 @@
       <file leaf-file-name="JpaRepository.class" pinned="false" current-in-tab="false">
         <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/data/spring-data-jpa/2.0.5.RELEASE/spring-data-jpa-2.0.5.RELEASE.jar!/org/springframework/data/jpa/repository/JpaRepository.class">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-50">
+            <state relative-caret-position="133">
               <caret line="15" column="17" selection-start-line="15" selection-start-column="17" selection-end-line="15" selection-end-column="17" />
             </state>
           </provider>
@@ -111,7 +72,7 @@
         <entry file="file://$PROJECT_DIR$/ManageScoreService/src/main/java/nb/stp/mansco/findpasswd/service/FindPasswdManager.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="133">
-              <caret line="10" column="48" lean-forward="true" selection-start-line="10" selection-start-column="48" selection-end-line="10" selection-end-column="48" />
+              <caret line="10" column="48" selection-start-line="10" selection-start-column="48" selection-end-line="10" selection-end-column="48" />
             </state>
           </provider>
         </entry>
@@ -119,7 +80,7 @@
       <file leaf-file-name="GenericManager.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/ManageScoreBase/src/main/java/nb/stp/mansco/base/service/GenericManager.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-614">
+            <state relative-caret-position="323">
               <caret line="22" column="17" selection-start-line="22" selection-start-column="17" selection-end-line="22" selection-end-column="17" />
             </state>
           </provider>
@@ -128,7 +89,7 @@
       <file leaf-file-name="FindPasswdManagerImpl.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/ManageScoreService/src/main/java/nb/stp/mansco/findpasswd/service/impl/FindPasswdManagerImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="58">
+            <state relative-caret-position="114">
               <caret line="16" column="13" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
             </state>
           </provider>
@@ -146,8 +107,8 @@
       <file leaf-file-name="Inquire.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/ManageScoreDao/src/main/java/nb/stp/mansco/inquire/domain/Inquire.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="392">
-              <caret line="33" lean-forward="true" selection-start-line="33" selection-end-line="33" />
+            <state relative-caret-position="437">
+              <caret line="33" selection-start-line="33" selection-end-line="33" />
             </state>
           </provider>
         </entry>
@@ -155,8 +116,8 @@
       <file leaf-file-name="index.jsp" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/ManageScoreWeb/src/main/webapp/WEB-INF/pages/findpasswd/index.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="456">
-              <caret line="27" column="7" lean-forward="true" selection-start-line="27" selection-start-column="7" selection-end-line="27" selection-end-column="7" />
+            <state relative-caret-position="513">
+              <caret line="27" column="7" selection-start-line="27" selection-start-column="7" selection-end-line="27" selection-end-column="7" />
             </state>
           </provider>
         </entry>
@@ -164,7 +125,7 @@
       <file leaf-file-name="spring-servlet.xml" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/ManageScoreWeb/src/main/webapp/WEB-INF/config/spring/spring-servlet.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="373">
+            <state relative-caret-position="19">
               <caret line="88" column="35" selection-start-line="88" selection-start-column="35" selection-end-line="88" selection-end-column="35" />
             </state>
           </provider>
@@ -261,6 +222,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -268,320 +231,11 @@
               <item name="ManageScore" type="b2602c69:ProjectViewProjectNode" />
               <item name="ManageScore" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="ManageScore" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ManageScore" type="462c0819:PsiDirectoryNode" />
-              <item name="ManageScoreBase" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ManageScore" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ManageScore" type="462c0819:PsiDirectoryNode" />
-              <item name="ManageScoreBase" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ManageScore" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ManageScore" type="462c0819:PsiDirectoryNode" />
-              <item name="ManageScoreBase" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ManageScore" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ManageScore" type="462c0819:PsiDirectoryNode" />
-              <item name="ManageScoreBase" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ManageScore" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ManageScore" type="462c0819:PsiDirectoryNode" />
-              <item name="ManageScoreBase" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="base" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ManageScore" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ManageScore" type="462c0819:PsiDirectoryNode" />
-              <item name="ManageScoreDao" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ManageScore" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ManageScore" type="462c0819:PsiDirectoryNode" />
-              <item name="ManageScoreDao" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ManageScore" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ManageScore" type="462c0819:PsiDirectoryNode" />
-              <item name="ManageScoreDao" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ManageScore" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ManageScore" type="462c0819:PsiDirectoryNode" />
-              <item name="ManageScoreDao" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ManageScore" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ManageScore" type="462c0819:PsiDirectoryNode" />
-              <item name="ManageScoreDao" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="mansco" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ManageScore" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ManageScore" type="462c0819:PsiDirectoryNode" />
-              <item name="ManageScoreDao" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ManageScore" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ManageScore" type="462c0819:PsiDirectoryNode" />
-              <item name="ManageScoreDao" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ManageScore" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ManageScore" type="462c0819:PsiDirectoryNode" />
-              <item name="ManageScoreDao" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="mansco" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ManageScore" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ManageScore" type="462c0819:PsiDirectoryNode" />
-              <item name="ManageScoreDao" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="mansco" type="462c0819:PsiDirectoryNode" />
-              <item name="dao" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ManageScore" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ManageScore" type="462c0819:PsiDirectoryNode" />
-              <item name="ManageScoreService" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ManageScore" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ManageScore" type="462c0819:PsiDirectoryNode" />
-              <item name="ManageScoreService" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ManageScore" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ManageScore" type="462c0819:PsiDirectoryNode" />
-              <item name="ManageScoreService" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ManageScore" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ManageScore" type="462c0819:PsiDirectoryNode" />
-              <item name="ManageScoreService" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ManageScore" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ManageScore" type="462c0819:PsiDirectoryNode" />
-              <item name="ManageScoreService" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="mansco" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ManageScore" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ManageScore" type="462c0819:PsiDirectoryNode" />
-              <item name="ManageScoreService" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="mansco" type="462c0819:PsiDirectoryNode" />
-              <item name="service" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ManageScore" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ManageScore" type="462c0819:PsiDirectoryNode" />
-              <item name="ManageScoreService" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="mansco" type="462c0819:PsiDirectoryNode" />
-              <item name="service" type="462c0819:PsiDirectoryNode" />
-              <item name="impl" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ManageScore" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ManageScore" type="462c0819:PsiDirectoryNode" />
-              <item name="ManageScoreWeb" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ManageScore" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ManageScore" type="462c0819:PsiDirectoryNode" />
-              <item name="ManageScoreWeb" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ManageScore" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ManageScore" type="462c0819:PsiDirectoryNode" />
-              <item name="ManageScoreWeb" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ManageScore" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ManageScore" type="462c0819:PsiDirectoryNode" />
-              <item name="ManageScoreWeb" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ManageScore" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ManageScore" type="462c0819:PsiDirectoryNode" />
-              <item name="ManageScoreWeb" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="mansco" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ManageScore" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ManageScore" type="462c0819:PsiDirectoryNode" />
-              <item name="ManageScoreWeb" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="mansco" type="462c0819:PsiDirectoryNode" />
-              <item name="controller" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ManageScore" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ManageScore" type="462c0819:PsiDirectoryNode" />
-              <item name="ManageScoreWeb" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="webapp" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ManageScore" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ManageScore" type="462c0819:PsiDirectoryNode" />
-              <item name="ManageScoreWeb" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="webapp" type="462c0819:PsiDirectoryNode" />
-              <item name="WEB-INF" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ManageScore" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ManageScore" type="462c0819:PsiDirectoryNode" />
-              <item name="ManageScoreWeb" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="webapp" type="462c0819:PsiDirectoryNode" />
-              <item name="WEB-INF" type="462c0819:PsiDirectoryNode" />
-              <item name="config" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ManageScore" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ManageScore" type="462c0819:PsiDirectoryNode" />
-              <item name="ManageScoreWeb" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="webapp" type="462c0819:PsiDirectoryNode" />
-              <item name="WEB-INF" type="462c0819:PsiDirectoryNode" />
-              <item name="config" type="462c0819:PsiDirectoryNode" />
-              <item name="javaee" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ManageScore" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ManageScore" type="462c0819:PsiDirectoryNode" />
-              <item name="ManageScoreWeb" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="webapp" type="462c0819:PsiDirectoryNode" />
-              <item name="WEB-INF" type="462c0819:PsiDirectoryNode" />
-              <item name="config" type="462c0819:PsiDirectoryNode" />
-              <item name="spring" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ManageScore" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ManageScore" type="462c0819:PsiDirectoryNode" />
-              <item name="ManageScoreWeb" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="webapp" type="462c0819:PsiDirectoryNode" />
-              <item name="WEB-INF" type="462c0819:PsiDirectoryNode" />
-              <item name="pages" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ManageScore" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ManageScore" type="462c0819:PsiDirectoryNode" />
-              <item name="ManageScoreWeb" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="webapp" type="462c0819:PsiDirectoryNode" />
-              <item name="WEB-INF" type="462c0819:PsiDirectoryNode" />
-              <item name="pages" type="462c0819:PsiDirectoryNode" />
-              <item name="findpasswd" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ManageScore" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ManageScore" type="462c0819:PsiDirectoryNode" />
-              <item name="ManageScoreWeb" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="webapp" type="462c0819:PsiDirectoryNode" />
-              <item name="WEB-INF" type="462c0819:PsiDirectoryNode" />
-              <item name="pages" type="462c0819:PsiDirectoryNode" />
-              <item name="inquire" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ManageScore" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ManageScore" type="462c0819:PsiDirectoryNode" />
-              <item name="ManageScoreWeb" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="webapp" type="462c0819:PsiDirectoryNode" />
-              <item name="WEB-INF" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ManageScore" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ManageScore" type="462c0819:PsiDirectoryNode" />
-              <item name="ManageScoreWeb" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="webapp" type="462c0819:PsiDirectoryNode" />
-              <item name="WEB-INF" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="vue-element-admin" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
       <pane id="AndroidView" />
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -934,6 +588,7 @@
       <workItem from="1530846718143" duration="2985000" />
       <workItem from="1530854558251" duration="57000" />
       <workItem from="1530856288194" duration="9563000" />
+      <workItem from="1531561270924" duration="614000" />
     </task>
     <task id="LOCAL-00001" summary="123">
       <created>1530851833902</created>
@@ -978,7 +633,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="64347000" />
+    <option name="totallyTimeSpent" value="64961000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -996,7 +651,6 @@
       <window_info id="UI Designer" order="2" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Messages" order="8" />
       <window_info anchor="right" id="Palette&#9;" order="3" />
       <window_info id="Image Layers" order="2" />
       <window_info anchor="bottom" id="Java Enterprise" order="8" />
@@ -1005,18 +659,19 @@
       <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49924356" weight="0.41898528" />
       <window_info anchor="bottom" id="Spring" order="7" />
       <window_info anchor="bottom" id="Terminal" order="7" />
-      <window_info id="Persistence" side_tool="true" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49722221" visible="true" weight="0.30786687" />
+      <window_info id="Persistence" order="3" side_tool="true" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49722221" visible="true" weight="0.31240544" />
       <window_info id="Web" order="2" side_tool="true" />
       <window_info anchor="right" id="Theme Preview" order="3" />
       <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Messages" order="8" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="bottom" id="Database Console" order="9" weight="0.3289689" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.3289689" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.3289689" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -1215,9 +870,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="380">
           <caret line="31" column="38" selection-start-line="31" selection-start-column="38" selection-end-line="31" selection-end-column="38" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1225,9 +877,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="437">
           <caret line="34" column="59" selection-start-line="34" selection-start-column="59" selection-end-line="34" selection-end-column="59" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1235,9 +884,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="411">
           <caret line="25" column="5" selection-start-line="25" selection-start-column="5" selection-end-line="25" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1280,11 +926,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1275">
           <caret line="105" column="32" lean-forward="true" selection-start-line="105" selection-start-column="32" selection-end-line="105" selection-end-column="32" />
-          <folding>
-            <element signature="e#2105#2106#0" expanded="true" />
-            <element signature="e#2145#2146#0" expanded="true" />
-            <element signature="e#2231#2232#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1297,14 +938,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/ManageScoreBase/src/main/java/nb/stp/mansco/base/dao/GenericDao.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="173">
-          <caret line="24" column="22" lean-forward="true" selection-start-line="24" selection-start-column="22" selection-end-line="24" selection-end-column="22" />
+        <state relative-caret-position="361">
+          <caret line="24" column="22" selection-start-line="24" selection-start-column="22" selection-end-line="24" selection-end-column="22" />
         </state>
       </provider>
     </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/data/spring-data-jpa/2.0.5.RELEASE/spring-data-jpa-2.0.5.RELEASE.jar!/org/springframework/data/jpa/repository/JpaRepository.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-50">
+        <state relative-caret-position="133">
           <caret line="15" column="17" selection-start-line="15" selection-start-column="17" selection-end-line="15" selection-end-column="17" />
         </state>
       </provider>
@@ -1319,20 +960,20 @@
     <entry file="file://$PROJECT_DIR$/ManageScoreService/src/main/java/nb/stp/mansco/findpasswd/service/FindPasswdManager.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="133">
-          <caret line="10" column="48" lean-forward="true" selection-start-line="10" selection-start-column="48" selection-end-line="10" selection-end-column="48" />
+          <caret line="10" column="48" selection-start-line="10" selection-start-column="48" selection-end-line="10" selection-end-column="48" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/ManageScoreBase/src/main/java/nb/stp/mansco/base/service/GenericManager.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-614">
+        <state relative-caret-position="323">
           <caret line="22" column="17" selection-start-line="22" selection-start-column="17" selection-end-line="22" selection-end-column="17" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/ManageScoreService/src/main/java/nb/stp/mansco/findpasswd/service/impl/FindPasswdManagerImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="58">
+        <state relative-caret-position="114">
           <caret line="16" column="13" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
         </state>
       </provider>
@@ -1346,21 +987,21 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/ManageScoreDao/src/main/java/nb/stp/mansco/inquire/domain/Inquire.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="392">
-          <caret line="33" lean-forward="true" selection-start-line="33" selection-end-line="33" />
+        <state relative-caret-position="437">
+          <caret line="33" selection-start-line="33" selection-end-line="33" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/ManageScoreWeb/src/main/webapp/WEB-INF/pages/findpasswd/index.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="456">
-          <caret line="27" column="7" lean-forward="true" selection-start-line="27" selection-start-column="7" selection-end-line="27" selection-end-column="7" />
+        <state relative-caret-position="513">
+          <caret line="27" column="7" selection-start-line="27" selection-start-column="7" selection-end-line="27" selection-end-column="7" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/ManageScoreWeb/src/main/webapp/WEB-INF/config/spring/spring-servlet.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="373">
+        <state relative-caret-position="19">
           <caret line="88" column="35" selection-start-line="88" selection-start-column="35" selection-end-line="88" selection-end-column="35" />
         </state>
       </provider>
