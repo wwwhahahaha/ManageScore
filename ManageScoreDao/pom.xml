@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <parent>
+        <artifactId>ManageScore</artifactId>
+        <groupId>NB.STP</groupId>
+        <version>1.0-SNAPSHOT</version>
+    </parent>
+    <modelVersion>4.0.0</modelVersion>
+
+    <artifactId>ManageScoreDao</artifactId>
+    <properties>
+        <java.version>1.8</java.version>
+        <spring.version>5.0.4.RELEASE</spring.version>
+    </properties>
+    <dependencies>
+        <dependency>
+            <groupId>NB.STP</groupId>
+            <artifactId>ManageScoreBase</artifactId>
+            <version>1.0-SNAPSHOT</version>
+        </dependency>
+        <!-- https://mvnrepository.com/artifact/javax.xml.bind/jaxb-api -->
+        <dependency>
+            <groupId>javax.xml.bind</groupId>
+            <artifactId>jaxb-api</artifactId>
+            <version>2.3.0</version>
+        </dependency>
+    </dependencies>
+
+    <build>
+
+        <plugins>
+            <!-- To use the plugin goals in your POM or parent POM -->
+            <plugin>
+                <groupId>io.github.divinespear</groupId>
+                <artifactId>jpa-schema-maven-plugin</artifactId>
+                <version>0.2.1</version>
+                <configuration>
+                    <format>true</format>
+                    <scriptAction>drop-and-create</scriptAction>
+                    <databaseAction>drop-and-create</databaseAction>
+                    <vendor>hibernate</vendor>
+                    <packageToScan>nb.stp.mansco</packageToScan>
+                    <jdbcDriver>com.mysql.jdbc.Driver</jdbcDriver>
+                    <jdbcUrl>jdbc:mysql://202.196.37.91:3306/stp</jdbcUrl>
+                    <jdbcUser>zutnlp</jdbcUser>
+                    <jdbcPassword>zutnlp</jdbcPassword>
+                    <properties>
+                        <hibernate.dialect>org.hibernate.dialect.MySQL5InnoDBDialect</hibernate.dialect>
+                    </properties>
+                </configuration>
+
+                <dependencies>
+                    <!-- https://mvnrepository.com/artifact/org.hibernate.javax.persistence/hibernate-jpa-2.1-api -->
+                    <dependency>
+                        <groupId>org.hibernate.javax.persistence</groupId>
+                        <artifactId>hibernate-jpa-2.1-api</artifactId>
+                        <version>1.0.2.Final</version>
+                    </dependency>
+                    <!-- https://mvnrepository.com/artifact/org.hibernate/hibernate-entitymanager -->
+                    <dependency>
+                        <groupId>org.hibernate</groupId>
+                        <artifactId>hibernate-entitymanager</artifactId>
+                        <version>5.2.16.Final</version>
+                    </dependency>
+                    <!-- https://mvnrepository.com/artifact/javax.xml.bind/jaxb-api -->
+                    <dependency>
+                        <groupId>javax.xml.bind</groupId>
+                        <artifactId>jaxb-api</artifactId>
+                        <version>2.3.0</version>
+                    </dependency>
+                    <!-- https://mvnrepository.com/artifact/mysql/mysql-connector-java -->
+                    <dependency>
+                        <groupId>mysql</groupId>
+                        <artifactId>mysql-connector-java</artifactId>
+                        <version>5.1.46</version>
+                    </dependency>
+                    <dependency>
+                        <groupId>org.springframework</groupId>
+                        <artifactId>spring-context</artifactId>
+                        <version>5.0.4.RELEASE</version>
+                    </dependency>
+                    <!-- https://mvnrepository.com/artifact/org.springframework/spring-web -->
+                    <dependency>
+                        <groupId>org.springframework</groupId>
+                        <artifactId>spring-web</artifactId>
+                        <version>5.0.4.RELEASE</version>
+                    </dependency>
+                </dependencies>
+            </plugin>
+        </plugins>
+    </build>
+
+
+
+</project>

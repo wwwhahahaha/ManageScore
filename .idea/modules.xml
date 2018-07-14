@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/ManScoreClient/ManScoreClient.iml" filepath="$PROJECT_DIR$/ManScoreClient/ManScoreClient.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ManageScore.iml" filepath="$PROJECT_DIR$/ManageScore.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ManageScoreBase/ManageScoreBase.iml" filepath="$PROJECT_DIR$/ManageScoreBase/ManageScoreBase.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ManageScoreDao/ManageScoreDao.iml" filepath="$PROJECT_DIR$/ManageScoreDao/ManageScoreDao.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ManageScoreService/ManageScoreService.iml" filepath="$PROJECT_DIR$/ManageScoreService/ManageScoreService.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ManageScoreWeb/ManageScoreWeb.iml" filepath="$PROJECT_DIR$/ManageScoreWeb/ManageScoreWeb.iml" />
+    </modules>
+  </component>
+</project>
