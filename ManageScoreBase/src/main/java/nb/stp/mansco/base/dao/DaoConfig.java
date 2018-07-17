@@ -4,7 +4,7 @@ import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
 
 @Configuration
-@ComponentScan(basePackages = "nb.stp.mansco")
+@ComponentScan(basePackages = "nb2.stp.mansco")
 public class DaoConfig {
 
 }
