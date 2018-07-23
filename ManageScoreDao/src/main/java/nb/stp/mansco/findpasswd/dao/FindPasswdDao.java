@@ -197,7 +197,7 @@ public class CartController extends BaseController{
 			e.printStackTrace();
 			String errorMsg=e.getMessage();
 		    re.setStatusCode("500");
-			re.setErrorCode("500");
+			re.setErrorCode("50");
 			re.setErrorMsg(errorMsg);
 			LOGGER.info(errorMsg);
 		}
