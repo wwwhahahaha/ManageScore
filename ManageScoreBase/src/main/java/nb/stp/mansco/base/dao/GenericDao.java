@@ -22,5 +22,5 @@ import java.io.Serializable;
  */
 @NoRepositoryBean
 public interface GenericDao<T extends BaseEntity, PK extends Serializable>
-		extends JpaRepository<T, PK>, JpaSpecificationExecutor<T> {//
+		extends JpaRepository<T, PK>, JpaSpecificationExecutor<T> {
 }
