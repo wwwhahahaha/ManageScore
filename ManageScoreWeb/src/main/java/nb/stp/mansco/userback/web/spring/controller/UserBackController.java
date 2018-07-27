@@ -1,107 +1,28 @@
-package com.jack.entity;
-
-import java.sql.Timestamp;
-
-import javax.persistence.Column;
-import javax.persistence.Entity;
-import javax.persistence.Id;
-import javax.persistence.Table;
-
-import org.hibernate.annotations.Cache;
-import org.hibernate.annotations.CacheConcurrencyStrategy;  
+package nb.stp.mansco.userback.web.spring.controller;
 
 
-@Entity  
-@Table(name = "user", catalog = "flower")  
-@Cache(usage = CacheConcurrencyStrategy.READ_WRITE)  
-public class User implements java.io.Serializable {
-	/**
-	 * 
-	 */
-	private static final long serialVersionUID = -487907882063705307L;
-	private String id;
-	private int type;
-	private String userName;
-	private String userPassword;
-	private String userEmail;
-	private String userPhone;
-	private String userOrderAddress;
-    private Timestamp createDate;
-	
-//    public User(UserVo userVo){
-//    	this.id=userVo.getId();
-//    	this.userName=userVo.getUserName();
-//    	this.userPassword=userVo.getUserPassword();
-//    	this.userEmail=userVo.getUserEmail();
-//    	this.userPhone=userVo.getUserPhone();
-//    	this.userOrderAddress=userVo.getUserOrderAddress();
-//    	this.createDate=userVo.getCreateDate();
-//    }
-    
-	@Id  
-    @Column(name = "id", unique = true, nullable = false, length = 36)  
-	public String getId() {
-		return id;
+import nb.stp.mansco.typein.service.TypeInManager;
+import nb.stp.mansco.typein.domain.TypeIn;
+import nb.stp.mansco.base.web.spring.controller.GenericController;
+import nb.stp.mansco.userback.domain.UserBack;
+import nb.stp.mansco.userback.service.UserBackManager;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
+
+@Controller
+@RequestMapping("/userback")
+public class UserBackController extends GenericController<UserBack,Long, UserBackManager> {
+
+	@RequestMapping(method = RequestMethod.GET, value = "/index.html")
+	public String index() {
+		String result = "/userback/index";
+		return result;
 	}
-	
-	public void setId(String id) {
-		this.id = id;
-	}
-	
-	@Column(name="type", nullable=false)
-	public int getType() {
-		return type;
+	@Autowired
+	public void setUserBackManager(UserBackManager manager) {
+		this.manager=manager;
 	}
 
-	public void setType(int type) {
-		this.type = type;
-	}
-
-	@Column(name = "userName", nullable = false)
-	public String getUserName() {
-		return userName;
-	}
-	public void setUserName(String userName) {
-		this.userName = userName;
-	}
-	
-	@Column(name = "userPassword", nullable = false)  
-	public String getUserPassword() {
-		return userPassword;
-	}
-	public void setUserPassword(String userPassword) {
-		this.userPassword = userPassword;
-	}
-	
-	@Column(name = "userEmail") 
-	public String getUserEmail() {
-		return userEmail;
-	}
-	public void setUserEmail(String userEmail) {
-		this.userEmail = userEmail;
-	}
-	
-	@Column(name = "userPhone") 
-	public String getUserPhone() {
-		return userPhone;
-	}
-	public void setUserPhone(String userPhone) {
-		this.userPhone = userPhone;
-	}
-	
-	@Column(name = "userOrderAddress") 
-	public String getUserOrderAddress() {
-		return userOrderAddress;
-	}
-	public void setUserOrderAddress(String userOrderAddress) {
-		this.userOrderAddress = userOrderAddress;
-	}
-	
-	@Column(name = "createDate") 
-	public Timestamp getCreateDate() {
-		return createDate;
-	}
-	public void setCreateDate(Timestamp createDate) {
-		this.createDate = createDate;
-	}
 }
