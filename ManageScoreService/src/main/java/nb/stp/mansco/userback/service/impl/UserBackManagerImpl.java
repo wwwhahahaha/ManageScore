@@ -1,43 +1,107 @@
-package nb.stp.mansco.userback.service.impl;
+﻿package com.jack.entity;
+
+import java.sql.Timestamp;
+
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.Id;
+import javax.persistence.Table;
+
+import org.hibernate.annotations.Cache;
+import org.hibernate.annotations.CacheConcurrencyStrategy;  
 
 
-import nb.stp.mansco.base.service.impl.GenericManagerImpl;
-import nb.stp.mansco.inquire.dao.InquireDao;
-import nb.stp.mansco.userback.dao.UserBackDao;
-import nb.stp.mansco.userback.domain.UserBack;
-import nb.stp.mansco.userback.service.UserBackManager;
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.data.domain.Example;
-import org.springframework.data.domain.ExampleMatcher;
-import org.springframework.stereotype.Component;
+@Entity  
+@Table(name = "user", catalog = "flower")  
+@Cache(usage = CacheConcurrencyStrategy.READ_WRITE)  
+public class User implements java.io.Serializable {
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = -487907882063705307L;
+	private String id;
+	private int type;
+	private String userName;
+	private String userPassword;
+	private String userEmail;
+	private String userPhone;
+	private String userOrderAddress;
+    private Timestamp createDate;
+	
+//    public User(UserVo userVo){
+//    	this.id=userVo.getId();
+//    	this.userName=userVo.getUserName();
+//    	this.userPassword=userVo.getUserPassword();
+//    	this.userEmail=userVo.getUserEmail();
+//    	this.userPhone=userVo.getUserPhone();
+//    	this.userOrderAddress=userVo.getUserOrderAddress();
+//    	this.createDate=userVo.getCreateDate();
+//    }
+    
+	@Id  
+    @Column(name = "id", unique = true, nullable = false, length = 36)  
+	public String getId() {
+		return id;
+	}
+	
+	public void setId(String id) {
+		this.id = id;
+	}
+	
+	@Column(name="type", nullable=false)
+	public int getType() {
+		return type;
+	}
 
-import java.util.ArrayList;
-import java.util.List;
+	public void setType(int type) {
+		this.type = type;
+	}
 
-
-@Component
-public class UserBackManagerImpl extends GenericManagerImpl<UserBack, Long> implements UserBackManager {
-    @Override
-    public List<UserBack> findByCode(String postcode) {
-
-        // 创建查询条件数据对象
-        UserBack queryObject = new UserBack();
-        queryObject.setDateCreated(null);
-        queryObject.setDateModified(null);
-        queryObject.setEmail(postcode);
-        // 创建匹配器，即如何使用查询条件
-        // 创建匹配器，即如何使用查询条件
-        ExampleMatcher matcher = ExampleMatcher.matching() // 构建对象
-                .withStringMatcher(ExampleMatcher.StringMatcher.CONTAINING) // 改变默认字符串匹配方式：模糊查询
-                .withIgnoreCase(true) // 改变默认大小写忽略方式：忽略大小写
-                .withMatcher("postcode", ExampleMatcher.GenericPropertyMatchers.startsWith()); // 地址采用“开始匹配”的方式查询
-        // 创建实例并查询
-        Example<UserBack> ex = Example.of(queryObject, matcher);
-        List<UserBack> result = dao.findAll(ex);
-        return result;
-    }
-    @Autowired
-    public void setUserBackDao(UserBackDao dao) {
-        this.dao = dao;
-    }
+	@Column(name = "userName", nullable = false)
+	public String getUserName() {
+		return userName;
+	}
+	public void setUserName(String userName) {
+		this.userName = userName;
+	}
+	
+	@Column(name = "userPassword", nullable = false)  
+	public String getUserPassword() {
+		return userPassword;
+	}
+	public void setUserPassword(String userPassword) {
+		this.userPassword = userPassword;
+	}
+	
+	@Column(name = "userEmail") 
+	public String getUserEmail() {
+		return userEmail;
+	}
+	public void setUserEmail(String userEmail) {
+		this.userEmail = userEmail;
+	}
+	
+	@Column(name = "userPhone") 
+	public String getUserPhone() {
+		return userPhone;
+	}
+	public void setUserPhone(String userPhone) {
+		this.userPhone = userPhone;
+	}
+	
+	@Column(name = "userOrderAddress") 
+	public String getUserOrderAddress() {
+		return userOrderAddress;
+	}
+	public void setUserOrderAddress(String userOrderAddress) {
+		this.userOrderAddress = userOrderAddress;
+	}
+	
+	@Column(name = "createDate") 
+	public Timestamp getCreateDate() {
+		return createDate;
+	}
+	public void setCreateDate(Timestamp createDate) {
+		this.createDate = createDate;
+	}
 }
