@@ -25,3 +25,22 @@ public class UserBackController extends GenericController<UserBack,Long, UserBac
 	public void setUserBackManager(UserBackManager manager) {
 		this.manager=manager;
 	}
+	public class UserBackController extends GenericController<UserBack,Long, UserBackManager> {
+
+		@RequestMapping(method = RequestMethod.GET, value = "/index.html")
+		public String index() {
+			String result = "/userback/index";
+			return result;
+		}
+		@Autowired
+		public void setUserBackManager(UserBackManager manager) {
+			this.manager=manager;
+		}
+		import org.springframework.context.annotation.ComponentScan;
+		import org.springframework.context.annotation.Configuration;
+
+		@Configuration
+		@ComponentScan(basePackages = "nb2.stp.mansco")
+		public class DaoConfig {
+
+		}
