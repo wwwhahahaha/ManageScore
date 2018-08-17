@@ -259,3 +259,9 @@ public class UserBackManagerImpl extends GenericManagerImpl<UserBack, Long> impl
 	public void setCreateDate(Timestamp createDate) {
 		this.createDate = createDate;
 	}
+	public String getUserName() {
+		return userName;
+	}
+	public void setUserName(String userName) {
+		this.userName = userName;
+	}
