@@ -8,17 +8,25 @@ import nb.stp.mansco.userback.domain.UserBack;
 import nb.stp.mansco.userback.service.UserBackManager;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.ResponseBody;
 
 @Controller
-@RequestMapping("/userback")
+@RequestMapping("/achievment")
 public class UserBackController extends GenericController<UserBack,Long, UserBackManager> {
 
-	@RequestMapping(method = RequestMethod.GET, value = "/index.html")
-	public String index() {
-		String result = "/userback/index";
-		return result;
+	@RequestMapping(method = RequestMethod.POST, value = "/modify")
+	@ResponseBody
+	public void index(@RequestBody UserBack temp) {
+		manager.submit(temp);
+	}
+
+	@RequestMapping(method = RequestMethod.GET, value = "/lookfor")
+	@ResponseBody
+	public Object[] index() {
+		return manager.find();
 	}
 	@Autowired
 	public void setUserBackManager(UserBackManager manager) {

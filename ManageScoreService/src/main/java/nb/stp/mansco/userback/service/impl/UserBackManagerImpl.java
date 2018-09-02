@@ -1,4 +1,4 @@
-﻿package nb.stp.mansco.userback.service.impl;
+package nb.stp.mansco.userback.service.impl;
 
 
 import nb.stp.mansco.base.service.impl.GenericManagerImpl;
@@ -17,25 +17,15 @@ import java.util.List;
 
 @Component
 public class UserBackManagerImpl extends GenericManagerImpl<UserBack, Long> implements UserBackManager {
-    @Override
-    public List<UserBack> findByCode(String postcode) {
-
-        // 创建查询条件数据对象
-        UserBack queryObject = new UserBack();
-        queryObject.setDateCreated(null);
-        queryObject.setDateModified(null);
-        queryObject.setEmail(postcode);
-        // 创建匹配器，即如何使用查询条件
-        // 创建匹配器，即如何使用查询条件
-        ExampleMatcher matcher = ExampleMatcher.matching() // 构建对象
-                .withStringMatcher(ExampleMatcher.StringMatcher.CONTAINING) // 改变默认字符串匹配方式：模糊查询
-                .withIgnoreCase(true) // 改变默认大小写忽略方式：忽略大小写
-                .withMatcher("postcode", ExampleMatcher.GenericPropertyMatchers.startsWith()); // 地址采用“开始匹配”的方式查询
-        // 创建实例并查询
-        Example<UserBack> ex = Example.of(queryObject, matcher);
-        List<UserBack> result = dao.findAll(ex);
-        return result;
+   @Override
+    public void submit(UserBack temp) {
+        dao.save(temp);
     }
+    @Override
+    public Object[] find() {
+        return dao.findAll().toArray();
+    }
+
     @Autowired
     public void setUserBackDao(UserBackDao dao) {
         this.dao = dao;

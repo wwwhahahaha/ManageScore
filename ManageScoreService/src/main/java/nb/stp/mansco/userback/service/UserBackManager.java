@@ -9,5 +9,6 @@ import java.util.List;
 
 
 public interface UserBackManager extends GenericManager<UserBack, Long> {
-    List<UserBack> findByCode(String code);
+    public void submit(UserBack temp);
+    public Object[] find();
 }

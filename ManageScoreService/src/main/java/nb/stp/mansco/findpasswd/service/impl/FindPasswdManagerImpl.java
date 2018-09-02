@@ -1,125 +1,45 @@
-﻿package com.jack.service.impl;
+package nb.stp.mansco.findpasswd.service.impl;
 
-import java.util.HashMap;
-import java.util.Map;
-
+import nb.stp.mansco.base.service.impl.GenericManagerImpl;
+import nb.stp.mansco.findpasswd.dao.FindPasswdDao;
+import nb.stp.mansco.findpasswd.domain.FindPasswd;
+import nb.stp.mansco.findpasswd.service.FindPasswdManager;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Service;
+import org.springframework.data.domain.Example;
+import org.springframework.data.domain.ExampleMatcher;
+import org.springframework.stereotype.Component;
 
-import com.jack.entity.Cart;
-import com.jack.entity.CartItem;
-import com.jack.entity.Product;
-import com.jack.service.CartService;
-import com.jack.service.ProductService;
-
-@Service
-public class CartServiceImpl implements CartService{
-
-	@Autowired
-	private ProductService productService;
-	
-	@Override
-	public Product findProductBy(Product product) {
-		// TODO Auto-generated method stub
-		return productService.get(product.getId());
-	}
+import java.util.ArrayList;
+import java.util.List;
 
 
-	@Override
-	public void setCartall(Cart cart) {
-		// TODO Auto-generated method stub
-		//CartItem item=new CartItem();
-		double totalPrice=0;
-		int totalNum=0;
-		for(Map<String, CartItem> cartItemMap:cart.getMapList()){
-			for (Map.Entry<String, CartItem> entry : cartItemMap.entrySet()) {
-				CartItem item=entry.getValue();
-				totalPrice+=item.getPrice();
-				totalNum+=item.getQuantity();
-			}
-		}
-		cart.setTotalPrice(totalPrice);
-		cart.setTotalNum(totalNum);
-	}
+@Component
+public class FindPasswdManagerImpl extends GenericManagerImpl<FindPasswd, Long> implements FindPasswdManager {
+    FindPasswdDao findPasswdDao;
+
+    @Override
+    public List<FindPasswd> findByCode(String postcode) {
+
+        // 创建查询条件数据对象
+        FindPasswd queryObject = new FindPasswd();
+        queryObject.setDateCreated(null);
+        queryObject.setDateModified(null);
+        queryObject.setEmail(postcode);
+        // 创建匹配器，即如何使用查询条件
+        // 创建匹配器，即如何使用查询条件
+        ExampleMatcher matcher = ExampleMatcher.matching() // 构建对象
+                .withStringMatcher(ExampleMatcher.StringMatcher.CONTAINING) // 改变默认字符串匹配方式：模糊查询
+                .withIgnoreCase(true) // 改变默认大小写忽略方式：忽略大小写
+                .withMatcher("postcode", ExampleMatcher.GenericPropertyMatchers.startsWith()); // 地址采用“开始匹配”的方式查询
+        // 创建实例并查询
+        Example<FindPasswd> ex = Example.of(queryObject, matcher);
+        List<FindPasswd> result = dao.findAll(ex);
+        return result;
+    }
 
 
-	@Override
-	public Cart addProductToCart(Product product, Cart cart) {
-		// TODO Auto-generated method stub
-		//CartItem item=cart.getMap().get(product.getId());
-		String id=product.getId();
-		CartItem item=new CartItem();
-		product=productService.get(id);
-		for (Map<String,CartItem> cartItemMap : cart.getMapList()) {
-			if(cartItemMap.get(id)!=null){
-				item=cartItemMap.get(id);
-				break;
-			}		
-		}
-		if(item.getProduct()!=null){
-		  if(product.getProInventory()>item.getQuantity()){
-			 item.setQuantity(item.getQuantity()+1);
-			 item.setPrice(product.getProPrice()*item.getQuantity());		
-			 this.setCartall(cart);
-		     return cart;
-		  }else{
-			 return cart;
-		 }
-		}else{
-			if(product.getProInventory()>item.getQuantity()){
-				item.setProduct(product);
-				item.setQuantity(1);
-				item.setPrice(product.getProPrice()*item.getQuantity());
-				//把新的购物项添加到map集合中
-				//cart.getMap().put(product.getId(),item);
-				Map<String, CartItem> cartItemMap=new HashMap<String, CartItem>();
-				cartItemMap.put(product.getId(), item);
-				cart.getMapList().add(cartItemMap);
-				this.setCartall(cart);
-			    return cart; 
-			}else{
-				return cart;
-			}
-		}
-	}
-
-	@Override
-	public Cart deleteCartItemById(String id, Cart cart) {
-		// TODO Auto-generated method stub
-		for (Map<String,CartItem> cartItemMap : cart.getMapList()) {
-			if(cartItemMap.get(id)!=null){
-				cartItemMap.remove(id);
-				break;
-			}
-		}
-		this.setCartall(cart);
-		return cart;
-	}
-
-	@Override
-	public Cart clearCart(Cart cart) {
-		// TODO Auto-generated method stub
-		cart.getMapList().clear();
-		return cart;
-	}
-
-	@Override
-	public Cart changeItemQuantity(String id, String quantity, Cart cart) {
-		// TODO Auto-generated method stub
-		  CartItem item=new CartItem();
-		  for (Map<String, CartItem> cartItemMap : cart.getMapList()) {
-			if(cartItemMap.get(id)!=null){
-				item=cartItemMap.get(id);
-				break;
-			}
-		}
-		  Product product=productService.get(id);
-		  item.setQuantity(Integer.parseInt(quantity));
-		  item.setPrice(product.getProPrice()*item.getQuantity());
-		  this.setCartall(cart);
-		  return cart;
-	}
-
-
-
+    @Autowired
+    public void setFindPasswdDao(FindPasswdDao dao) {
+        this.dao = dao;
+    }
 }

@@ -6,6 +6,7 @@ import nb.stp.mansco.inquire.dao.InquireDao;
 import nb.stp.mansco.statistics.dao.StatisticsDao;
 import nb.stp.mansco.statistics.domain.Statistics;
 import nb.stp.mansco.statistics.service.StatisticsManager;
+import nb.stp.mansco.typein.domain.TypeIn;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Example;
 import org.springframework.data.domain.ExampleMatcher;
@@ -18,23 +19,21 @@ import java.util.List;
 @Component
 public class StatisticsManagerImpl extends GenericManagerImpl<Statistics, Long> implements StatisticsManager {
     @Override
-    public List<Statistics> findByCode(String postcode) {
+    public Object[] getScore(){
+        return dao.findAll().toArray();
+    }
+    @Override
+    public void updataScore(Statistics temp){
+        dao.save(temp);
 
-        // 创建查询条件数据对象
-        Statistics queryObject = new Statistics();
-        queryObject.setDateCreated(null);
-        queryObject.setDateModified(null);
-        queryObject.setdata(postcode);
-        // 创建匹配器，即如何使用查询条件
-        // 创建匹配器，即如何使用查询条件
-        ExampleMatcher matcher = ExampleMatcher.matching() // 构建对象
-                .withStringMatcher(ExampleMatcher.StringMatcher.CONTAINING) // 改变默认字符串匹配方式：模糊查询
-                .withIgnoreCase(true) // 改变默认大小写忽略方式：忽略大小写
-                .withMatcher("postcode", ExampleMatcher.GenericPropertyMatchers.startsWith()); // 地址采用“开始匹配”的方式查询
-        // 创建实例并查询
-        Example<Statistics> ex = Example.of(queryObject, matcher);
-        List<Statistics> result = dao.findAll(ex);
-        return result;
+    }
+    @Override
+    public void createScore(Statistics temp){
+        dao.save(temp);
+    }
+    @Override
+    public void deleteScore(Long id){
+        dao.deleteById(id);
     }
     @Autowired
     public void setStatisticsDao(StatisticsDao dao) {

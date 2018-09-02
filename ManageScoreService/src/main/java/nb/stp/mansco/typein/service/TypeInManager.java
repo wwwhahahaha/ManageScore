@@ -9,5 +9,8 @@ import java.util.List;
 
 
 public interface TypeInManager extends GenericManager<TypeIn, Long> {
-    List<TypeIn> findByCode(String code);
+    public Object[] getDetails();
+    public void updataDetails(TypeIn a);
+    public void createDetails(TypeIn a);
+    public void deleteDetails(Long id);
 }

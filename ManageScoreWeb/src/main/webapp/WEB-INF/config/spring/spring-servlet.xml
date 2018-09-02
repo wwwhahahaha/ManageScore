@@ -86,10 +86,11 @@
 		</property>
 	</bean>
 
+	<mvc:default-servlet-handler />
 	<mvc:resources mapping="/js/**"
 		location="/WEB-INF/resources/js/" />
-	<mvc:resources mapping="/vue-element-admin/**"
-		location="/WEB-INF/resources/vue-element-admin/" />
+	<mvc:resources mapping="/static/**"
+		 location="/WEB-INF/resources/vue-element-admin/static/" />
 	<mvc:resources mapping="/style/**"
 		location="/WEB-INF/resources/style/" />
 	<mvc:resources mapping="/images/**"

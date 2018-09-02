@@ -18,23 +18,21 @@ import java.util.List;
 @Component
 public class TypeInManagerImpl extends GenericManagerImpl<TypeIn, Long> implements TypeInManager {
     @Override
-    public List<TypeIn> findByCode(String postcode) {
+    public Object[] getDetails(){
+        return dao.findAll().toArray();
+    }
+    @Override
+    public void updataDetails(TypeIn temp){
+        dao.save(temp);
 
-        // 创建查询条件数据对象
-        TypeIn queryObject = new TypeIn();
-        queryObject.setDateCreated(null);
-        queryObject.setDateModified(null);
-        queryObject.setstruct(postcode);
-        // 创建匹配器，即如何使用查询条件
-        // 创建匹配器，即如何使用查询条件
-        ExampleMatcher matcher = ExampleMatcher.matching() // 构建对象
-                .withStringMatcher(ExampleMatcher.StringMatcher.CONTAINING) // 改变默认字符串匹配方式：模糊查询
-                .withIgnoreCase(true) // 改变默认大小写忽略方式：忽略大小写
-                .withMatcher("postcode", ExampleMatcher.GenericPropertyMatchers.startsWith()); // 地址采用“开始匹配”的方式查询
-        // 创建实例并查询
-        Example<TypeIn> ex = Example.of(queryObject, matcher);
-        List<TypeIn> result = dao.findAll(ex);
-        return result;
+    }
+    @Override
+    public void createDetails(TypeIn temp){
+        dao.save(temp);
+    }
+    @Override
+    public void deleteDetails(Long id){
+        dao.deleteById(id);
     }
     @Autowired
     public void setTypeInDao(TypeInDao dao) {

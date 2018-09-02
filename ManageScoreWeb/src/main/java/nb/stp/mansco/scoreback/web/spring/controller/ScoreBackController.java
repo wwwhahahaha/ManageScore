@@ -9,11 +9,9 @@ import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 
-@Controller
-@RequestMapping("/scoreback")
+
 public class ScoreBackController extends GenericController<ScoreBack,Long, ScoreBackManager> {
 
-	@RequestMapping(method = RequestMethod.GET, value = "/index.html")
 	public String index() {
 		String result = "/scoreback/index";
 		return result;

@@ -8,24 +8,50 @@ import javax.persistence.Table;
 @Table(name = "LoginandLogout")
 @Entity
 public class LoginandLogout extends nb.stp.mansco.base.domain.BaseEntity {
-    @Column(name = "userName")
-    String userName;
-    @Column(name = "userPasswd")
-    String userPasswd;
 
-    public String getUserName() {
-        return userName;
+    public String getSex() {
+        return sex;
     }
 
-    public void setUserName(String userName) {
-        this.userName = userName;
+    public void setSex(String sex) {
+        this.sex = sex;
     }
 
-    public String getUserPasswd() {
-        return userPasswd;
+
+
+    public String getPass() {
+        return pass;
     }
 
-    public void setUserPasswd(String userPasswd) {
-        this.userPasswd = userPasswd;
+    public void setPass(String pass) {
+        this.pass = pass;
     }
+    public void setAge(int age) {
+        this.age = age;
+    }
+
+    public int getAge() {
+        return age;
+    }
+
+    @Column(name = "sex")
+    String sex;
+
+    @Column(name = "age")
+    int age;
+
+    public String getRoles() {
+        return roles;
+    }
+
+    public void setRoles(String roles) {
+        this.roles = roles;
+    }
+
+    @Column(name = "roles")
+    String roles;
+    @Column(name = "pass")
+    String pass;
+
+
 }

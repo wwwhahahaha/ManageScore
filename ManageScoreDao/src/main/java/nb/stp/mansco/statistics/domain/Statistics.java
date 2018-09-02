@@ -4,40 +4,41 @@ import nb.stp.mansco.base.domain.BaseEntity;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
+import javax.persistence.Id;
 import javax.persistence.Table;
 
 @Table(name="statistics")
 @Entity
 public class Statistics extends BaseEntity {
-    public String getdata() {
-        return data;
+
+    public int getChinese() {
+        return chinese;
     }
 
-    public void setdata(String userName) {
-        this.data = userName;
-    }
-    @Column(name="data")
-    String data;
-
-    public String getCatagory() {
-        return catagory;
+    public void setChinese(int chinese) {
+        this.chinese = chinese;
     }
 
-    public void setCatagory(String catagory) {
-        this.catagory = catagory;
+    public int getMath() {
+        return math;
     }
 
-    @Column(name="catagory")
-    String catagory;
-
-    public int getValue() {
-        return value;
+    public void setMath(int math) {
+        this.math = math;
     }
 
-    public void setValue(int value) {
-        this.value = value;
+    public int getEnglish() {
+        return english;
     }
 
-    @Column(name="value")
-    int value;
+    public void setEnglish(int english) {
+        this.english = english;
+    }
+
+    @Column(name="chinese")
+    int chinese;
+    @Column(name="math")
+    int math;
+    @Column(name="english")
+    int english;
 }
